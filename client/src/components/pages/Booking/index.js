@@ -6,7 +6,7 @@ class Booking extends React.Component {
 
   render() {
     return (
-    
+    <h2>Hello I am the booking page</h2>
     );
   }
 }

@@ -6,7 +6,7 @@ class Landing extends React.Component {
 
   render() {
     return (
-    
+    <h2>Hello I am the landing page</h2>
     );
   }
 }
