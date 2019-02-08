@@ -1,14 +1,14 @@
-import React from "react";
+// import React from "react";
 
-class AUpload extends React.Component {
-  state = {
-  };
+// class AUpload extends React.Component {
+//   state = {
+//   };
 
-  render() {
-    return (
+// //   render() {
+// //     return (
     
-    );
-  }
-}
+// //     );
+// //   }
+// // }
 
-export default AUpload;
+// // export default AUpload;

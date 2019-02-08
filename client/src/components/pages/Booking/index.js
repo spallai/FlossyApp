@@ -1,14 +1,14 @@
-import React from "react";
+// import React from "react";
 
-class Booking extends React.Component {
-  state = {
-  };
+// class Booking extends React.Component {
+//   state = {
+//   };
 
-  render() {
-    return (
+// //   render() {
+// //     return (
     
-    );
-  }
-}
+// //     );
+// //   }
+// // }
 
-export default Booking;
+// // export default Booking;
