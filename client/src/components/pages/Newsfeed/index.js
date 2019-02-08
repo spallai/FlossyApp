@@ -1,6 +1,6 @@
 import React from "react";
 
-class Anewsfeed extends React.Component {
+class Newsfeed extends React.Component {
   state = {
   };
 
@@ -11,4 +11,4 @@ class Anewsfeed extends React.Component {
   }
 }
 
-export default Anewsfeed;
+export default Newsfeed;
