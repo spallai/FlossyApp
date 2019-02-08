@@ -6,7 +6,7 @@ class Anewsfeed extends React.Component {
 
   render() {
     return (
-    <h2>Hello I am content!!!</h2>
+    <h2>Hello I am the newsfeed</h2>
     );
   }
 }
