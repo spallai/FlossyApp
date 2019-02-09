@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import './App.css';
 import Footer from './components/Footer'
 import Navbar from './components/Navbar'
-
 import Newsfeed from './components/Newsfeed'
 import Search from './components/pages/Search/index.js'
 import Landing from './components/pages/Landing/index.js'
@@ -16,8 +15,6 @@ import Userfollowers from './components/Userfollowers'
 import Userfollow from './components/Userfollow'
 import Upload from './components/Upload'
 import Profilebox from './components/Profilebox'
-import Container from './components/Container'
-
 
 
 class App extends Component {
