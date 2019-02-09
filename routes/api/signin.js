@@ -7,7 +7,7 @@ const UserSession = require('../../models/UserSession');
    * Sign up
    */
   router.post('/api/account/signup', (req, res, next) => {
-  
+
       const { body } = req;
     const {
       firstName,
@@ -153,70 +153,70 @@ const UserSession = require('../../models/UserSession');
     });
   });
 
-router.get('/api/account/verify', (req, res, next) => {
-    // Get the token
-    const { query } = req;
-    const { token } = query;
-    // ?token=test
+  router.get('/api/account/verify', (req, res, next) => {
+      // Get the token
+      const { query } = req;
+      const { token } = query;
+      // ?token=test
 
-    // Verify the token is one of a kind and it's not deleted.
+      // Verify the token is one of a kind and it's not deleted.
 
-    UserSession.find({
-      _id: token,
-      isDeleted: false
-    }, (err, sessions) => {
-      if (err) {
-        console.log(err);
-        return res.send({
-          success: false,
-          message: 'Error: Server error'
-        });
-      }
+      UserSession.find({
+        _id: token,
+        isDeleted: false
+      }, (err, sessions) => {
+        if (err) {
+          console.log(err);
+          return res.send({
+            success: false,
+            message: 'Error: Server error'
+          });
+        }
 
-      if (sessions.length != 1) {
-        return res.send({
-          success: false,
-          message: 'Error: Invalid'
-        });
-      } else {
+        if (sessions.length != 1) {
+          return res.send({
+            success: false,
+            message: 'Error: Invalid'
+          });
+        } else {
+          return res.send({
+            success: true,
+            message: 'Good'
+          });
+        }
+      });
+    });
+
+    router.get('/api/account/logout', (req, res, next) => {
+      // Get the token
+      const { query } = req;
+      const { token } = query;
+      // ?token=test
+
+      // Verify the token is one of a kind and it's not deleted.
+
+      UserSession.findOneAndUpdate({
+        _id: token,
+        isDeleted: false
+      }, {
+        $set: {
+          isDeleted:true
+        }
+      }, null, (err, sessions) => {
+        if (err) {
+          console.log(err);
+          return res.send({
+            success: false,
+            message: 'Error: Server error'
+          });
+        }
+
         return res.send({
           success: true,
           message: 'Good'
         });
-      }
-    });
-  });
-
-  router.get('/api/account/logout', (req, res, next) => {
-    // Get the token
-    const { query } = req;
-    const { token } = query;
-    // ?token=test
-
-    // Verify the token is one of a kind and it's not deleted.
-
-    UserSession.findOneAndUpdate({
-      _id: token,
-      isDeleted: false
-    }, {
-      $set: {
-        isDeleted:true
-      }
-    }, null, (err, sessions) => {
-      if (err) {
-        console.log(err);
-        return res.send({
-          success: false,
-          message: 'Error: Server error'
-        });
-      }
-
-      return res.send({
-        success: true,
-        message: 'Good'
       });
     });
-  });
 
 
 module.exports = router;
