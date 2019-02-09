@@ -15,7 +15,7 @@ if (process.env.NODE_ENV === "production") {
 }
 
 // Define API routes here
-const routes = require("./routes/api.js");
+const routes = require("./routes/api/signin.js");
 app.use(routes);
 
 // Send every other request to the React app
@@ -24,7 +24,7 @@ app.get("*", (req, res) => {
 });
 
 // Connect to the Mongo DB
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/mernexample", { useNewUrlParser: true });
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/flossydb", { useNewUrlParser: true });
 
 app.listen(PORT, () => {
   console.log(`🌎 ==> Server now on port ${PORT}!`);
