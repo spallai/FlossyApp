@@ -1,4 +1,15 @@
 import React from "react";
+import Profilebox from "../../Profilebox";
+import Artistfollow from "../../Artistfollow";
+import Artistfollowers from "../../Artistfollowers";
+import Artistpend from "../../Artistpend";
+// import Artistbooking from "../../Artistbooking/index.js";
+import Userpend from "../../Userpend";
+import Userfollowers from "../../Userfollowers";
+import Userfollow from "../../Userfollow";
+import Upload from "../../Upload";
+import Newsfeed from "../../Newsfeed"
+import "./style.css"
 
 class Newsfeedcontainer extends React.Component {
   state = {
@@ -6,9 +17,37 @@ class Newsfeedcontainer extends React.Component {
 
   render() {
     return (
-    <h2>Hello I am the Newsfeedcontainer page</h2>
+
+      <div className="container">
+        <div className="row">
+          
+          <div className="col m4 border">
+            <Profilebox />
+            <span><Upload />
+              </span >
+              <Artistpend />
+              <Userfollow />
+              <Userfollowers />
+              <Userpend />
+              <Artistfollowers />
+              <Artistfollow />
+          </div>
+
+          <div className="col m8 border">
+              {/* float right */}
+              <Newsfeed />
+
+          </div>
+            
+          
+        </div>
+      </div>
+      
+
     );
   }
 }
 
 export default Newsfeedcontainer;
+
+
