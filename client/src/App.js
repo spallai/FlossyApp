@@ -1,46 +1,34 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import './App.css';
 import Footer from './components/Footer'
 import Navbar from './components/Navbar'
-
-import Newsfeed from './components/Newsfeed'
-import Search from './components/pages/Search/index.js'
 import Landing from './components/pages/Landing/index.js'
-import Artistbooking from './components/Artistbooking'
 import Profilesetup from './components/pages/Profilesetup/index.js'
-import Artistfollow from './components/Artistfollow'
-import Artistfollowers from './components/Artistfollowers'
-import Artistpend from './components/Artistpend'
-import Userpend from './components/Userpend'
-import Userfollowers from './components/Userfollowers'
-import Userfollow from './components/Userfollow'
-import Upload from './components/Upload'
-import Profilebox from './components/Profilebox'
-import Container from './components/Container'
-
+// import Newsfeed from "./components/pages/Newsfeed";
+import Newsfeedcontainer from './components/pages/Newsfeedcontainer/index.js';
 
 
 class App extends Component {
   render() {
     return (
-      <div className="container>">
-   
-      <Navbar />
-      <Landing />
-      <Profilesetup />
-      <Search />
-      <Artistfollow />
-      <Artistfollowers />
-      <Artistpend />
-      <Artistbooking />
-      <Userpend />
-      <Userfollowers />
-      <Userfollow />
-      <Profilebox />
-      <Newsfeed />
-      <Upload />
-      <Footer />
-      </div>
+      <Router>
+        <div className="container>">
+          <Navbar />
+
+          <Switch>
+
+            <Profilesetup />
+            {/* <Search /> */}
+            {/* <Route exact path="/newsfeed" component={Newsfeed} /> */}
+            <Route exact path="/newsfeed" component={Newsfeedcontainer} />
+            <Landing />
+
+          </Switch>
+
+          <Footer />
+        </div>
+      </Router>
     );
   }
 }
