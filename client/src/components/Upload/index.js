@@ -6,7 +6,7 @@ class Upload extends React.Component {
 
   render() {
     return (
-    <h2>Hello I am the upload page</h2>
+    <h2>Hello I am the upload Component</h2>
     );
   }
 }
