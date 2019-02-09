@@ -1,8 +1,8 @@
 import React from "react";
 
 class Landing extends React.Component {
-  // state = {
-  // };
+  state = {
+  };
   
   fileSelectedHandler = event => {
     console.log(event.target.files);
