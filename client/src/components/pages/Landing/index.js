@@ -1,12 +1,18 @@
 import React from "react";
 
 class Landing extends React.Component {
-  state = {
-  };
+  // state = {
+  // };
+  
+  fileSelectedHandler = event => {
+    console.log(event.target.files);
+  }
 
   render() {
     return (
-    <h2>Hello I am the landing page</h2>
+   <div className= "App">
+      <input type="file" onChange= {this.fileSelectedHandler}/>
+   </div>
     );
   }
 }
