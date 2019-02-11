@@ -3,8 +3,8 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import './App.css';
 import Footer from './components/Footer'
 import Navbar from './components/Navbar'
-import Home from './components/pages/Home'
-import Landing from './components/pages/Landing/index.js'
+import Login from './components/pages/Login'
+import Landing from './components/pages/Landing'
 import Profilesetup from './components/pages/Profilesetup/index.js'
 // import Newsfeed from "./components/pages/Newsfeed";
 import Newsfeedcontainer from './components/pages/Newsfeedcontainer/index.js';
@@ -15,19 +15,20 @@ class App extends Component {
     return (
       <Router>
         <div className="container>">
-          <Navbar />
-          <Newsfeedcontainer/>
-          <Home/>
-          {/* <Switch> */}
+          <Navbar/>
+          <Route exact path="/login" component={Login} />
+          <Route exact path="/newsfeed" component={Newsfeedcontainer} />
+          <Route exact path="/upload" component={Landing} />
+
+          {/* <Newsfeedcontainer/> */}
+          <Switch>
 
             {/* <Profilesetup /> */}
             {/* <Search /> */}
             {/* <Route exact path="/newsfeed" component={Newsfeed} /> */}
-            {/* <Route exact path="/newsfeed" component={Newsfeedcontainer} /> */}
-            
-            <Landing />
 
-          {/* </Switch> */}
+
+          </Switch>
 
           <Footer />
         </div>
