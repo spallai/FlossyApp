@@ -7,8 +7,16 @@ const UserSession = require('../../models/UserSession');
    * Sign up
    */
   router.post('/api/account/signup', (req, res, next) => {
-
-      const { body } = req;
+    Product.create(req.body)
+    .then(() => {
+      res.json(true);
+    })
+    .catch((err) => {
+      // if not, we can at least catch the error
+      res.json(err);
+    });
+  
+    const { body } = req;
     const {
       firstName,
       lastName, 
