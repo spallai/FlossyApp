@@ -15,7 +15,7 @@ class Newsfeed extends React.Component {
     return (
     <div className="container" >
       <div className="row">
-        <div className="col m12 text-center">
+        <div className="col m9 text-center">
             <h2>Newsfeed item1</h2>
             <h2>Newsfeed item2</h2>
             <h2>Newsfeed item3</h2>

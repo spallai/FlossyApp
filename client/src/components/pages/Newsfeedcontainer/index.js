@@ -18,10 +18,10 @@ class Newsfeedcontainer extends React.Component {
   render() {
     return (
 
-      <div className="container">
+      <div >
         <div className="row">
           
-          <div className="col m4 border">
+          <div className="col m3 border">
             <Profilebox />
             <span><Upload />
               </span >
@@ -33,7 +33,7 @@ class Newsfeedcontainer extends React.Component {
               <Artistfollow />
           </div>
 
-          <div className="col m8 border">
+          <div className="col m9 border">
               {/* float right */}
               <Newsfeed />
 
