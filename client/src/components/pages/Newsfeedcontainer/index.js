@@ -7,7 +7,6 @@ import Artistpend from "../../Artistpend";
 import Userpend from "../../Userpend";
 import Userfollowers from "../../Userfollowers";
 import Userfollow from "../../Userfollow";
-import Upload from "../../Upload";
 import Newsfeed from "../../Newsfeed"
 import "./style.css"
 
@@ -32,7 +31,7 @@ class Newsfeedcontainer extends React.Component {
           </div>
 
           <div className="col m9 border">
-              {/* float right */}
+             
               <Newsfeed />
 
           </div>

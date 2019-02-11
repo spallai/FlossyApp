@@ -16,23 +16,14 @@ class App extends Component {
       <Router>
         <div className="container>">
           <Navbar/>
-<<<<<<< HEAD
-         
-=======
+      
+
+          {/* <Newsfeedcontainer/> */}
+          <Switch>
           <Route exact path="/login" component={Login} />
           <Route exact path="/newsfeed" component={Newsfeedcontainer} />
           <Route exact path="/profilebox" component={Profilebox} />
           <Route exact path="/upload" component={Landing} />
->>>>>>> ARSBranch6
-
-          {/* <Newsfeedcontainer/> */}
-          <Switch>
-          <Route exact path="/" component={Landing} />
-          <Route exact path="/newsfeed" component={Newsfeedcontainer} />
-          <Route exact path="/upload" component={Landing} />
-            {/* <Profilesetup /> */}
-            {/* <Search /> */}
-            {/* <Route exact path="/newsfeed" component={Newsfeed} /> */}
 
 
           </Switch>
