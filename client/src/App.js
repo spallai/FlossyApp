@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import './App.css';
 import Footer from './components/Footer'
 import Navbar from './components/Navbar'
+import Home from './components/pages/Home'
 import Landing from './components/pages/Landing/index.js'
 import Profilesetup from './components/pages/Profilesetup/index.js'
 // import Newsfeed from "./components/pages/Newsfeed";
@@ -16,6 +17,7 @@ class App extends Component {
         <div className="container>">
           <Navbar />
           <Newsfeedcontainer/>
+          <Home/>
           {/* <Switch> */}
 
             {/* <Profilesetup /> */}
