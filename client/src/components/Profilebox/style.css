@@ -1,0 +1,15 @@
+.profileBox {
+    border: rgb(237,110,115) solid 4px;
+    border-radius: 25px;
+}
+
+.card-image {
+    border-radius: 25px;
+}
+
+.bookArtist {
+    background-color: rgb(237,110,115);
+    border-radius: 25px;
+}
+
+

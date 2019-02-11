@@ -9,7 +9,7 @@ class Navbar extends React.Component {
 
   render() {
     return (
-      <nav className="navbar">
+      <nav className="navbar" >
       <a href="#" class="brand-logo" alt="logo"></a>
       <img class="logo" src={logo} ></img>
       <h2>uFlossy</h2>

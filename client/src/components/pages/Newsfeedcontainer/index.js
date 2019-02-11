@@ -19,12 +19,10 @@ class Newsfeedcontainer extends React.Component {
     return (
 
       <div >
-        <div className="row">
+        <div className="row" style={{marginTop:"5%", marginBottom:"10%"}}>
           
           <div className="col m3 border">
             <Profilebox />
-            <span><Upload />
-              </span >
               <Artistpend />
               <Userfollow />
               <Userfollowers />
