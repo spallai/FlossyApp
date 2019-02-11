@@ -1,0 +1,18 @@
+.userpic {
+    width: 280px;
+    height: 280px;
+    border-radius: 25px;
+}
+
+.card-image{
+    width: 280px;
+    height: 280px;
+}
+
+.card-content{
+    width: 250px;
+}
+
+.card-stacked{
+    float: right;
+}

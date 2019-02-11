@@ -1,4 +1,7 @@
 import React from "react";
+import "./style.css"
+import userpic from "./assets/userpic.jpeg";
+
 
 class Profilebox extends React.Component {
   state = {
@@ -7,23 +10,25 @@ class Profilebox extends React.Component {
   render() {
     return (
       <div className="row">
-      <div className="col s12 m7">
-        <div className="card">
-          <div className="card-image">
-            <img style={{maxWidth: "85%"}}src="http://www.catster.com/wp-content/uploads/2017/08/A-fluffy-cat-looking-funny-surprised-or-concerned.jpg"/>
-            <span className="card-title">Cat McCatster</span>
-          </div>
-          <div className="card-content">
-            <p>I love to do all sorts of cat-makeup. Cat eyeshadow is my favorite. Tune in weekly for my videos!!!!</p>
-          </div>
-          <div className="card-action">
-            <a href="#">Book me!!</a>
-          </div>
-        </div>
+        <div className="col s12 m7">
+          <h2 className="header">User Profile</h2>
+          <div className="card horizontal">
+            <div className="card-image">
+              <img className="userpic" src={userpic} alt="userpic"/>
       </div>
-    </div>
-      );
-  }
-}
+              <div className="card-stacked">
+                <div className="card-content">
+                  <p>Email: user@gmail.com</p>
+                  <p>Phone: 213.878.9000</p>
+                  <p>Website: www.makeupsquad.com</p>
 
-export default Profilebox;
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      );
+    }
+  }
+  
+  export default Profilebox;
