@@ -5,7 +5,7 @@ import Footer from './components/Footer'
 import Navbar from './components/Navbar'
 import Login from './components/pages/Login'
 import Landing from './components/pages/Landing'
-import Profilesetup from './components/pages/Profilesetup/index.js'
+import Profilebox from './components/Profilebox'
 // import Newsfeed from "./components/pages/Newsfeed";
 import Newsfeedcontainer from './components/pages/Newsfeedcontainer/index.js';
 
@@ -16,7 +16,14 @@ class App extends Component {
       <Router>
         <div className="container>">
           <Navbar/>
+<<<<<<< HEAD
          
+=======
+          <Route exact path="/login" component={Login} />
+          <Route exact path="/newsfeed" component={Newsfeedcontainer} />
+          <Route exact path="/profilebox" component={Profilebox} />
+          <Route exact path="/upload" component={Landing} />
+>>>>>>> ARSBranch6
 
           {/* <Newsfeedcontainer/> */}
           <Switch>

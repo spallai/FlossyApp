@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .profileBox {
     border: rgb(237,110,115) solid 4px;
     border-radius: 25px;
@@ -13,3 +14,23 @@
 }
 
 
+=======
+.userpic {
+    width: 280px;
+    height: 280px;
+    border-radius: 25px;
+}
+
+.card-image{
+    width: 280px;
+    height: 280px;
+}
+
+.card-content{
+    width: 250px;
+}
+
+.card-stacked{
+    float: right;
+}
+>>>>>>> ARSBranch6
