@@ -1,4 +1,5 @@
 import React from "react";
+import "./style.css"
 
 class Footer extends React.Component {
   state = {
@@ -6,7 +7,7 @@ class Footer extends React.Component {
 
   render() {
     return (
-      <footer className="page-footer">
+      <footer className="page-footer" id="footer">
       <div className="container">
         <div className="row">
           <div className="col l6 s12">

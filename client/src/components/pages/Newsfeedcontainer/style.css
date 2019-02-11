@@ -5,3 +5,31 @@
     width: 200px;
     height: 150px;
   }
+
+  html, body {
+    height: 100%;
+
+    margin: 0;
+}
+#content {
+    height: 100%;
+}
+
+  #left {
+    float: left;
+    width: 30%;
+    
+    height: 100%;
+    overflow: auto;
+    box-sizing: border-box;
+    padding: 0.5em;
+  }
+  #right {
+    float: left;
+    width: 70%;
+  
+    height: 100%;
+    overflow: auto;
+    box-sizing: border-box;
+    padding: 0.5em;
+  }

@@ -19,30 +19,33 @@ class Newsfeedcontainer extends React.Component {
     return (
 
       <div >
-        <div className="row">
-          
-          <div className="col m3 border">
+        <br />
+        <br />
+       
+
+          <div className="col m3 border" id="left" >
             <Profilebox />
             <span><Upload />
-              </span >
-              <Artistpend />
-              <Userfollow />
-              <Userfollowers />
-              <Userpend />
-              <Artistfollowers />
-              <Artistfollow />
+            </span >
+            <Artistpend />
+            <Userfollow />
+            <Userfollowers />
+            <Userpend />
+            <Artistfollowers />
+            <Artistfollow />
           </div>
+       
 
-          <div className="col m9 border">
-              {/* float right */}
-              <Newsfeed />
 
-          </div>
-            
-          
+        <div className="col m9 border" id="right" >
+          {/* float right */}
+          <Newsfeed />
+
         </div>
+
+
       </div>
-      
+
 
     );
   }
