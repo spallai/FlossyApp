@@ -25,6 +25,7 @@
     "if-env": "^1.0.4",
     "mongoose": "^5.3.16",
     "react-activity-feed": "^0.7.3",
-    "react-fontawesome": "^1.6.1"
+    "react-fontawesome": "^1.6.1",
+    "react-router-dom": "^4.3.1"
   }
 }

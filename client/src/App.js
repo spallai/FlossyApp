@@ -15,16 +15,17 @@ class App extends Component {
       <Router>
         <div className="container>">
           <Navbar />
+          <Newsfeedcontainer/>
+          {/* <Switch> */}
 
-          <Switch>
-
-            <Profilesetup />
+            {/* <Profilesetup /> */}
             {/* <Search /> */}
             {/* <Route exact path="/newsfeed" component={Newsfeed} /> */}
-            <Route exact path="/newsfeed" component={Newsfeedcontainer} />
+            {/* <Route exact path="/newsfeed" component={Newsfeedcontainer} /> */}
+            
             <Landing />
 
-          </Switch>
+          {/* </Switch> */}
 
           <Footer />
         </div>

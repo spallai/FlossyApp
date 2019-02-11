@@ -8,6 +8,8 @@ import Userpend from "../../Userpend";
 import Userfollowers from "../../Userfollowers";
 import Userfollow from "../../Userfollow";
 import Upload from "../../Upload";
+import Newsfeed from "../../Newsfeed"
+import "./style.css"
 
 class Newsfeedcontainer extends React.Component {
   state = {
@@ -19,7 +21,7 @@ class Newsfeedcontainer extends React.Component {
       <div className="container">
         <div className="row">
           
-          <div className="col m4">
+          <div className="col m4 border">
             <Profilebox />
             <span><Upload />
               </span >
@@ -31,8 +33,9 @@ class Newsfeedcontainer extends React.Component {
               <Artistfollow />
           </div>
 
-          <div className="col m8">
+          <div className="col m8 border">
               {/* float right */}
+              <Newsfeed />
 
           </div>
             
@@ -46,3 +49,5 @@ class Newsfeedcontainer extends React.Component {
 }
 
 export default Newsfeedcontainer;
+
+
