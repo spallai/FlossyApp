@@ -18,7 +18,7 @@ class Newsfeedcontainer extends React.Component {
   render() {
     return (
 
-      <div >
+      <div className="content" id="content">
         <br />
         <br />
        
@@ -38,7 +38,7 @@ class Newsfeedcontainer extends React.Component {
 
 
         <div className="col m9 border" id="right" >
-          {/* float right */}
+          
           <Newsfeed />
 
         </div>
