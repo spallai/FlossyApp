@@ -16,13 +16,13 @@ class App extends Component {
       <Router>
         <div className="container>">
           <Navbar/>
-          <Route exact path="/login" component={Login} />
-          <Route exact path="/newsfeed" component={Newsfeedcontainer} />
-          <Route exact path="/upload" component={Landing} />
+         
 
           {/* <Newsfeedcontainer/> */}
           <Switch>
-
+          <Route exact path="/" component={Landing} />
+          <Route exact path="/newsfeed" component={Newsfeedcontainer} />
+          <Route exact path="/upload" component={Landing} />
             {/* <Profilesetup /> */}
             {/* <Search /> */}
             {/* <Route exact path="/newsfeed" component={Newsfeed} /> */}
