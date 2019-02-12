@@ -8,18 +8,18 @@ class Userpend extends React.Component {
     return (
 <div className="row">
       <div className="col s12 m6">
-        <div className="card blue-grey darken-1">
+        <div className="card profileCards darken-1">
           <div className="card-content white-text">
-            <span className="card-title">Your pending appointments and messages requests</span>
-            <p>Message<br></br>Appointment</p>
+            <span className="card-title">Your sent appointment requests and messages</span>
+            <br></br>
+            <div className="container messageContainer"> <p>Message:</p></div> 
+            <br></br>
+            <div className="container messageContainer"> <p>Appointments:</p></div> 
           </div>
-          {/* <div class="card-action">
-            <a href="#">This is a link</a>
-            <a href="#">This is a link</a>
-          </div> */}
         </div>
       </div>
-    </div>      );
+    </div> 
+    );
   }
 }
 

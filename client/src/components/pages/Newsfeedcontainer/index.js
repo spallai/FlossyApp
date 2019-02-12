@@ -7,7 +7,6 @@ import Artistpend from "../../Artistpend";
 import Userpend from "../../Userpend";
 import Userfollowers from "../../Userfollowers";
 import Userfollow from "../../Userfollow";
-import Upload from "../../Upload";
 import Newsfeed from "../../Newsfeed"
 import "./style.css"
 
@@ -18,15 +17,11 @@ class Newsfeedcontainer extends React.Component {
   render() {
     return (
 
-      <div className="content" id="content">
-        <br />
-        <br />
-       
+      <div >
+        <div className="row" style={{ marginTop: "5%", marginBottom: "10%" }}>
 
-          <div className="col m3 border" id="left" >
+          <div className="col m3 border">
             <Profilebox />
-            <span><Upload />
-            </span >
             <Artistpend />
             <Userfollow />
             <Userfollowers />
@@ -34,23 +29,26 @@ class Newsfeedcontainer extends React.Component {
             <Artistfollowers />
             <Artistfollow />
           </div>
-       
 
 
-        <div className="col m9 border" id="right" >
-          
-          <Newsfeed />
+          <div className="col m9 border">
 
-        </div>
+            <Newsfeed />
 
+            <div className="col m9 border" id="right" >
 
-      </div>
+              <Newsfeed />
 
-
-    );
-  }
-}
-
-export default Newsfeedcontainer;
+            </div>
 
 
+          </div>
+          </div>
+          </div>
+          );
+        }
+      }
+      
+      export default Newsfeedcontainer;
+      
+      

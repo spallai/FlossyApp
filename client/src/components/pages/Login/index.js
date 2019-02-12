@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import 'whatwg-fetch';
+import {Redirect} from 'react-router-dom';
 
 import {
   getFromStorage,
@@ -21,6 +22,8 @@ class Login extends Component {
       signUpLastName: '',
       signUpEmail: '',
       signUpPassword: '',
+      redirect: false
+
     };
 
     this.onTextboxChangeSignInEmail = this.onTextboxChangeSignInEmail.bind(this);
@@ -133,6 +136,7 @@ class Login extends Component {
             signUpLastName: '',
             signUpEmail: '',
             signUpPassword: '',
+            redirect: true
           });
         } else {
           this.setState({
@@ -175,6 +179,7 @@ class Login extends Component {
             signInPassword: '',
             signInEmail: '',
             token: json.token,
+            redirect: true
           });
         } else {
           this.setState({
@@ -226,15 +231,20 @@ class Login extends Component {
       signUpEmail,
       signUpPassword,
       signUpError,
+      redirect
     } = this.state;
 
     if (isLoading) {
       return (<div><p>Loading...</p></div>);
     }
-
+    if (redirect) {
+      console.log('hit redirect');
+      return <Redirect to='/newsfeed'/>; 
+    }
     if (!token) {
-      return (
-        <div>
+      if (this.props.type === 'login') {
+        return (
+          <div>
           <div>
             {
               (signInError) ? (
@@ -256,10 +266,12 @@ class Login extends Component {
               onChange={this.onTextboxChangeSignInPassword}
             />
             <br />
-            <button onClick={this.onSignIn}>Sign In</button>
+            <a onClick={this.onSignIn} class="waves-effect waves-light btn-large text-white  landingBttn"><i class="material-icons supervisor_account left"></i>Submit</a>
           </div>
-          <br />
-          <br />
+          </div>
+        )
+      }  else {
+        return (
           <div>
             {
               (signUpError) ? (
@@ -291,13 +303,12 @@ class Login extends Component {
               value={signUpPassword}
               onChange={this.onTextboxChangeSignUpPassword}
             /><br />
-            <button onClick={this.onSignUp}>Sign Up</button>
+            <a onClick={this.onSignUp}class="waves-effect waves-light btn-large text-white  landingBttn"><i class="material-icons supervisor_account left"></i>Submit</a>
           </div>
-
-        </div>
       );
-    }
+      }
 
+    }
     return (
       <div>
         <p>Account</p>
