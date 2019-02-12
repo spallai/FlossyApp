@@ -12,10 +12,11 @@ class Artistpend extends React.Component {
           <div className="card profileCards darken-1">
             <div className="card-content white-text">
               <span className="card-title">Your pending appointments and messages</span>
+              <div class="collection">
+                <a href="#!" class="collection-item"><span class="new badge">23</span>EMAIL</a>
+                <a href="#!" class="collection-item"><span class="new badge">13</span>APPOINTMENT REQUESTS</a>
+              </div>
               <br></br>
-              <div className="container messageContainer"> <p>Message:</p></div>
-              <br></br>
-              <div className="container messageContainer"> <p>Appointments:</p></div>
             </div>
           </div>
         </div>
