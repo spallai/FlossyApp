@@ -23,7 +23,7 @@ class App extends Component {
           <Route exact path="/login" component={Login} />
           <Route exact path="/newsfeed" component={Newsfeedcontainer} />
           <Route exact path="/profilebox" component={Profilebox} />
-          <Route exact path="/upload" component={Landing} />
+          <Route exact path="/" component={Landing} />
 
 
           </Switch>

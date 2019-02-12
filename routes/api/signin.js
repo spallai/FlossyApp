@@ -7,7 +7,7 @@ const UserSession = require('../../models/UserSession');
    * Sign up
    */
   router.post('/api/account/signup', (req, res, next) => {
-    Product.create(req.body)
+    User.create(req.body)
     .then(() => {
       res.json(true);
     })
@@ -127,8 +127,8 @@ const UserSession = require('../../models/UserSession');
       }
       if (users.length != 1) {
         return res.send({
-          success: false,
-          message: 'Error: Invalid'
+          success: true,
+          message: 'Error: Invalid sign in'
         });
       }
 
@@ -136,7 +136,7 @@ const UserSession = require('../../models/UserSession');
       if (!user.validPassword(password)) {
         return res.send({
           success: false,
-          message: 'Error: Invalid'
+          message: 'Error2: Invalid'
         });
       }
 
