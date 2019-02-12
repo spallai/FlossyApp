@@ -18,10 +18,6 @@ router.post('/api/account/signup', (req, res, next) => {
     });
 
 
-
-
-  const { body } = req;
-
   const { body } = req;
   const {
     firstName,
