@@ -5,17 +5,25 @@ import Artistpend from "../../Artistpend";
 import Userpend from "../../Userpend";
 import Userfollowers from "../../Userfollowers";
 import Userfollow from "../../Userfollow";
+import Navbar from "../../Navbar"
 import Newsfeed from "../../Newsfeed"
 import "./style.css"
 
 class Newsfeedcontainer extends React.Component {
-  state = {
-  };
+constructor (props) {
+  super(props);
+  this.state = {}
+}
+
+  rerouteAfterLogout = () => {
+    console.log(this.props)
+    this.props.history.push('/')
+  }
 
   render() {
     return (
-
       <div >
+      <Navbar rerouteAfterLogout = {this.rerouteAfterLogout} />
         <div className="row " id="content" style={{ marginTop: "5%", marginBottom: "10%" }}>
 
           <div className="col-md-3 border" >

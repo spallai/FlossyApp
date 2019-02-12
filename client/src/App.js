@@ -15,12 +15,12 @@ class App extends Component {
     return (
       <Router>
         <div className="container>">
-          <Navbar />
+
 
           <Switch>
-            <Route exact path="/newsfeed" component={Newsfeedcontainer} />
+            <Route exact path="/newsfeed" render={(props) => <Newsfeedcontainer {...props} />} />
             <Route exact path="/profilebox" component={Profilebox} />
-            <Route exact path="/" component={Landing} />
+            <Route exact path="/" render={(props) => <Landing {...props}/>} />
           </Switch>
 
           <Footer />

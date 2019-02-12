@@ -1,6 +1,7 @@
 import React from "react";
 import "./style.css"
 import userpic from "./assets/userpic.jpeg";
+import Navbar from "../Navbar";
 
 
 class Profilebox extends React.Component {
@@ -9,6 +10,8 @@ class Profilebox extends React.Component {
 
   render() {
     return (
+      <div>
+        <Navbar/>
       <div className="row">
         <div className="col m3">
           <h2 className="header">User Profile</h2>
@@ -37,6 +40,7 @@ class Profilebox extends React.Component {
               </div>
             </div>
           </div>
+        </div>
         </div>
     );
   }

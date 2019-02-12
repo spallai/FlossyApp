@@ -2,13 +2,21 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./style.css";
 import logo from "./assets/logo.png";
-
-
-
+import axios from 'axios';
 
 class Navbar extends React.Component {
-  state = {
-  };
+  constructor(props){
+    super(props);
+    this.state = {}
+  }
+
+  handleLogOut = () => {
+    console.log('hit');
+    localStorage.clear();
+    axios.get("/logout").then(()=>{
+      this.props.rerouteAfterLogout();
+    })
+  }
 
   render() {
     return (
@@ -22,7 +30,9 @@ class Navbar extends React.Component {
           <li><Link to= "/"> Sign In/Sign up</Link></li>
           <li><Link to="/newsfeed">Newsfeed</Link></li>
           <li><Link to="/browse">Browse</Link></li>
-          <li><Link to= "/"> Logout</Link></li>
+         <button onClick={this.handleLogOut}>
+           log out
+         </button>
         </ul>
       </div>
     </nav>

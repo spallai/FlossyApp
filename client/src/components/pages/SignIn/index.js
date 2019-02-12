@@ -88,23 +88,8 @@ class SignIn extends Component {
       }),
     }).then(res => res.json())
       .then(json => {
-        console.log('json', json);
-        if (json.success) {
-          setInStorage('../../../app/utils/storage', { token: json.token });
-          this.setState({
-            signInError: json.message,
-            isLoading: false,
-            signInPassword: '',
-            signInEmail: '',
-            token: json.token,
-            redirect: true
-          });
-        } else {
-          this.setState({
-            signInError: json.message,
-            isLoading: false,
-          });
-        }
+        localStorage.setItem('userData', JSON.stringify(json));
+        this.props.history.push('/newsfeed');
       });
   }
 
@@ -150,7 +135,7 @@ class SignIn extends Component {
               onChange={this.onTextboxChangeSignInPassword}
             />
             <br />
-            <a onClick={this.onSignIn} class="waves-effect waves-light btn-large text-white  landingBttn"><i class="material-icons supervisor_account left"></i>Submit</a>
+            <a onClick={this.onSignIn} className="waves-effect waves-light btn-large text-white  landingBttn"><i class="material-icons supervisor_account left"></i>Submit</a>
           </div>
           </div>
         )

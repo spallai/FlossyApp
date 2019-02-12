@@ -2,11 +2,15 @@ import React from "react";
 import "./style.css";
 import SignIn from "../SignIn";
 import SignUp from "../SignUp";
+import Navbar from "../../Navbar";
+
 import {Link} from "react-router-dom";
 
 class Landing extends React.Component {
-  state = {
-  };
+    constructor (props){
+        super(props);
+        this.state = {}
+    }
 
   handleLoginModal = () => {
     this.setState({
@@ -22,11 +26,17 @@ class Landing extends React.Component {
     })
   }
 
+  rerouteAfterLogout = () => {
+      this.props.history.push("/");
+  }
+
   render() {
-    let login = this.state.login ? <SignIn type="login" /> : null;
-    let signUp = this.state.signUp ? <SignUp type="signup" /> : null;
+          let login = this.state.login ? <SignIn {...this.props} type="login" /> : null;
+    let signUp = this.state.signUp ? <SignUp {...this.props} type="signup" /> : null;
 
     return (
+        <div>          
+            <Navbar rerouteAfterLogout={this.rerouteAfterLogout} {...this.props} />
       <div className="container center-align " style={{ marginTop: "6%" }}>
         <div className="row">
           <div className="col m2" >
@@ -36,6 +46,7 @@ class Landing extends React.Component {
             {signUp}
           </div>
         </div>
+      </div>
       </div>
 
     );
