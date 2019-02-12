@@ -153,7 +153,7 @@ class SignUp extends Component {
       return <Redirect to='/newsfeed'/>; 
     }
     if (!token) {
-      if (this.props.type === 'login') {
+      if (this.props.type === 'signup') {
         return (
           <div>
             {

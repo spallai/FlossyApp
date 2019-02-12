@@ -2,6 +2,7 @@ import React from "react";
 import "./style.css";
 import SignIn from "../SignIn";
 import SignUp from "../SignUp";
+import {Link} from "react-router-dom";
 
 class Landing extends React.Component {
   state = {
@@ -29,8 +30,8 @@ class Landing extends React.Component {
 <div className="container center-align " style={{marginTop:"6%"}}>
     <div className="row">
     <div className="col m2" >
-    <a class="waves-effect waves-light btn-large text-white  landingBttn"><i class="material-icons supervisor_account left"></i>Login</a>
-    <a class="waves-effect waves-light btn-large text-white landingBttn"><i class="material-icons left"></i>Sign up</a>
+    <a onClick = {this.handleLoginModal}class="waves-effect waves-light btn-large text-white  landingBttn"><i class="material-icons supervisor_account left"></i>Sign In</a>
+    <a onClick = {this.handleSignUpModal}class="waves-effect waves-light btn-large text-white landingBttn"><i class="material-icons left"></i>Sign Up</a>
     {login}
     {signUp}
    </div>
