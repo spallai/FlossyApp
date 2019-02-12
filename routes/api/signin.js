@@ -7,7 +7,11 @@ const UserSession = require('../../models/UserSession');
    * Sign up
    */
   router.post('/api/account/signup', (req, res, next) => {
+<<<<<<< HEAD
     User.create(req.body)
+=======
+    Product.create(req.body)
+>>>>>>> 6e67c14e28ee5943f5c3c8c8c39399fb7170d1e5
     .then(() => {
       res.json(true);
     })
@@ -15,11 +19,16 @@ const UserSession = require('../../models/UserSession');
       // if not, we can at least catch the error
       res.json(err);
     });
+<<<<<<< HEAD
 
 
 
 
       const { body } = req;
+=======
+  
+    const { body } = req;
+>>>>>>> 6e67c14e28ee5943f5c3c8c8c39399fb7170d1e5
     const {
       firstName,
       lastName, 
