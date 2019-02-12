@@ -3,8 +3,9 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import './App.css';
 import Footer from './components/Footer'
 import Navbar from './components/Navbar'
-import Login from './components/pages/Login'
 import Landing from './components/pages/Landing'
+// import SignIn from './components/pages/SignIn'
+// import SignUp from './components/pages/SignUp'
 import Profilebox from './components/Profilebox'
 import Newsfeedcontainer from './components/pages/Newsfeedcontainer/index.js';
 

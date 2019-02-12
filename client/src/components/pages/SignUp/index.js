@@ -7,7 +7,7 @@ import {
   setInStorage,
 } from '../../../app/utils/storage';
 
-class Login extends Component {
+class SignUp extends Component {
   constructor(props) {
     super(props);
 
@@ -15,9 +15,6 @@ class Login extends Component {
       isLoading: true,
       token: '',
       signUpError: '',
-      signInError: '',
-      signInEmail: '',
-      signInPassword: '',
       signUpFirstName: '',
       signUpLastName: '',
       signUpEmail: '',
@@ -26,20 +23,17 @@ class Login extends Component {
 
     };
 
-    this.onTextboxChangeSignInEmail = this.onTextboxChangeSignInEmail.bind(this);
-    this.onTextboxChangeSignInPassword = this.onTextboxChangeSignInPassword.bind(this);
+
     this.onTextboxChangeSignUpEmail = this.onTextboxChangeSignUpEmail.bind(this);
     this.onTextboxChangeSignUpPassword = this.onTextboxChangeSignUpPassword.bind(this);
     this.onTextboxChangeSignUpFirstName = this.onTextboxChangeSignUpFirstName.bind(this);
     this.onTextboxChangeSignUpLastName = this.onTextboxChangeSignUpLastName.bind(this);
 
-    this.onSignIn = this.onSignIn.bind(this);
     this.onSignUp = this.onSignUp.bind(this);
-    this.logout = this.logout.bind(this);
   }
 
   componentDidMount() {
-    const obj = getFromStorage('../../../App.js');
+    const obj = getFromStorage('../../../app/utils/storage');
     if (obj && obj.token) {
       const { token } = obj;
       // Verify token
@@ -64,17 +58,7 @@ class Login extends Component {
     }
   }
 
-  onTextboxChangeSignInEmail(event) {
-    this.setState({
-      signInEmail: event.target.value,
-    });
-  }
 
-  onTextboxChangeSignInPassword(event) {
-    this.setState({
-      signInPassword: event.target.value,
-    });
-  }
 
   onTextboxChangeSignUpEmail(event) {
     this.setState({
@@ -110,7 +94,7 @@ class Login extends Component {
     } = this.state;
 
     this.setState({
-      isLoading: true,
+      isLoading: true
     });
 
     // Post request to backend
@@ -147,85 +131,12 @@ class Login extends Component {
       });
   }
 
-  onSignIn() {
-    // Grab state
-    const {
-      signInEmail,
-      signInPassword,
-    } = this.state;
-
-    this.setState({
-      isLoading: true,
-    });
-
-    // Post request to backend
-    fetch('/api/account/signin', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({
-        email: signInEmail,
-        password: signInPassword,
-      }),
-    }).then(res => res.json())
-      .then(json => {
-        console.log('json', json);
-        if (json.success) {
-          setInStorage('../../../App.js', { token: json.token });
-          this.setState({
-            signInError: json.message,
-            isLoading: false,
-            signInPassword: '',
-            signInEmail: '',
-            token: json.token,
-            redirect: true
-          });
-        } else {
-          this.setState({
-            signInError: json.message,
-            isLoading: false,
-          });
-        }
-      });
-  }
-
-  logout() {
-    this.setState({
-      isLoading: true,
-    });
-    const obj = getFromStorage('../../../App.js');
-    if (obj && obj.token) {
-      const { token } = obj;
-      // Verify token
-      fetch('/api/account/logout?token=' + token)
-        .then(res => res.json())
-        .then(json => {
-          if (json.success) {
-            this.setState({
-              token: '',
-              isLoading: false
-            });
-          } else {
-            this.setState({
-              isLoading: false,
-            });
-          }
-        });
-    } else {
-      this.setState({
-        isLoading: false,
-      });
-    }
-  }
+  
 
   render() {
     const {
       isLoading,
       token,
-      signInError,
-      signInEmail,
-      signInPassword,
       signUpFirstName,
       signUpLastName,
       signUpEmail,
@@ -242,35 +153,7 @@ class Login extends Component {
       return <Redirect to='/newsfeed' />;
     }
     if (!token) {
-      if (this.props.type === 'login') {
-        return (
-          <div>
-            <div>
-              {
-                (signInError) ? (
-                  <p>{signInError}</p>
-                ) : (null)
-              }
-              <p>Sign In</p>
-              <input
-                type="email"
-                placeholder="Email"
-                value={signInEmail}
-                onChange={this.onTextboxChangeSignInEmail}
-              />
-              <br />
-              <input
-                type="password"
-                placeholder="Password"
-                value={signInPassword}
-                onChange={this.onTextboxChangeSignInPassword}
-              />
-              <br />
-              <a onClick={this.onSignIn} className="waves-effect waves-light btn-large text-white  landingBttn"><i className="material-icons supervisor_account left"></i>Submit</a>
-            </div>
-          </div>
-        )
-      } else {
+      if (this.props.type === 'signup') {
         return (
           <div>
             {
@@ -307,15 +190,8 @@ class Login extends Component {
           </div>
         );
       }
-
     }
-    return (
-      <div>
-        <p>Account</p>
-        <button onClick={this.logout}>Logout</button>
-      </div>
-    );
   }
 }
 
-export default Login;
+export default SignUp;

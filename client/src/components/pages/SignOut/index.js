@@ -7,21 +7,13 @@ import {
   setInStorage,
 } from '../../../app/utils/storage';
 
-class Logout extends Component {
+class SignOut extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
       isLoading: true,
       token: '',
-      signUpError: '',
-      signInError: '',
-      signInEmail: '',
-      signInPassword: '',
-      signUpFirstName: '',
-      signUpLastName: '',
-      signUpEmail: '',
-      signUpPassword: '',
       redirect: false
 
     };
@@ -104,4 +96,4 @@ class Logout extends Component {
   }
 }
 
-export default Logout;
+export default SignOut;

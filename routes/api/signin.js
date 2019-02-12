@@ -3,12 +3,11 @@ const User = require('../../models/User.js');
 const UserSession = require('../../models/UserSession');
 
 
-/*
- * Sign up
- */
-router.post('/api/account/signup', (req, res, next) => {
-  User.create(req.body)
-  Product.create(req.body)
+  /*
+   * Sign up
+   */
+  router.post('/api/account/signup', (req, res, next) => {
+    User.create(req.body)
     .then(() => {
       res.json(true);
     })
@@ -153,11 +152,38 @@ router.post('/api/account/signin', (req, res, next) => {
           message: 'Error: server error'
         });
       }
+      if (users.length != 1) {
+        return res.send({
+          success: true,
+          message: 'Error: Invalid sign in'
+        });
+      }
 
-      return res.send({
-        success: true,
-        message: 'Valid sign in',
-        token: doc._id
+      const user = users[0];
+      if (!user.validPassword(password)) {
+        return res.send({
+          success: false,
+          message: 'Error2: Invalid'
+        });
+      }
+
+      // Otherwise correct user
+      const userSession = new UserSession();
+      userSession.userId = user._id;
+      userSession.save((err, doc) => {
+        if (err) {
+          console.log(err);
+          return res.send({
+            success: false,
+            message: 'Error: server error'
+          });
+        }
+
+        return res.send({
+          success: true,
+          message: 'Valid sign in',
+          token: doc._id
+        });
       });
     });
   });

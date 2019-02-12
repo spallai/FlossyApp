@@ -3,16 +3,16 @@
     height: 550px;
 }
 
-
 .profileCards {
-    background-color: rgb(237,110,115);
-    margin: 5px;
+    background-color: rgba(237,110,115, 0.8);
+    margin: auto;
     border-radius: 25px;
-    color: black
+    color: black;
+    max-width: 70%;
+}
+
+.card-content {
+    width: 100%;
 }
 
 
-/* .newsfeedContainer {
-    overflow: scroll;
-
-} */

@@ -1,6 +1,8 @@
 import React from "react";
 import "./style.css";
-import Login from "../Login";
+import SignIn from "../SignIn";
+import SignUp from "../SignUp";
+import {Link} from "react-router-dom";
 
 class Landing extends React.Component {
   state = {
