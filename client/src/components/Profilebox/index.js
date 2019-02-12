@@ -21,8 +21,19 @@ class Profilebox extends React.Component {
                   <p>Email: user@gmail.com</p>
                   <p>Phone: 213.878.9000</p>
                   <p>Website: www.makeupsquad.com</p>
-
                 </div>
+              <div className="chip chip-hash">
+                #hair
+              </div>
+              <div className="chip chip-hash">
+                #makeup
+              </div>
+              <div className="chip chip-hash">
+                #nails
+              </div>
+              <div className="chip chip-hash">
+                #glamsquad
+              </div>
               </div>
             </div>
           </div>

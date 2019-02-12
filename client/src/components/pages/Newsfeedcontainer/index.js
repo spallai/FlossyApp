@@ -1,7 +1,5 @@
 import React from "react";
 import Profilebox from "../../Profilebox";
-import Artistfollow from "../../Artistfollow";
-import Artistfollowers from "../../Artistfollowers";
 import Artistpend from "../../Artistpend";
 // import Artistbooking from "../../Artistbooking/index.js";
 import Userpend from "../../Userpend";
@@ -26,8 +24,6 @@ class Newsfeedcontainer extends React.Component {
               <Userfollow />
               <Userfollowers />
               <Userpend />
-              <Artistfollowers />
-              <Artistfollow />
           </div>
 
           <div className="col m9 border">

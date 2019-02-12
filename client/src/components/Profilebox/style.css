@@ -31,3 +31,8 @@
 .card-stacked{
     float: right;
 }
+
+.chip-hash{
+    width: 105px;
+    margin-left: 5px;
+}
