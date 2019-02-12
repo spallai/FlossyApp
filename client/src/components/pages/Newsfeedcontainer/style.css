@@ -9,23 +9,14 @@
 
 #content {
     height: 100%;
+    display: flex;
+    flex: 1;
+  
 }
 
-  #left {
+body,
+html {
+    height: 100%;
+    margin: 0;
+}
 
-    width: 50%;
-    float: left;
-    height: 100%;
-    overflow: auto;
-    box-sizing: border-box;
-    padding: 0.5em;
-  }
-  #right {
-  
-    width: 50%;
-    float: left;
-    height: 100%;
-    overflow: auto;
-    box-sizing: border-box;
-    padding: 0.5em;
-  }

@@ -15,7 +15,7 @@
 
 .userpic {
     width: 280px;
-    height: 280px;
+    height: 220px;
     border-radius: 25px;
 }
 
@@ -24,10 +24,23 @@
     height: 280px;
 }
 
-.card-content{
-    width: 250px;
-}
+
 
 .card-stacked{
     float: right;
+}
+
+.card .card-image img {
+    display: block;
+    border-radius: 2px 2px 0 0;
+    position: relative;
+    left: 65px;
+    right: 0;
+    top: 25px;
+    bottom: 0;
+    width: 100%;
+}
+.card .card-content {
+    padding: 10px;
+    border-radius: 0 0 2px 2px;
 }

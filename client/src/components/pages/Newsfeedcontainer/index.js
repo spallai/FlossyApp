@@ -18,37 +18,40 @@ class Newsfeedcontainer extends React.Component {
     return (
 
       <div >
-        <div className="row" style={{ marginTop: "5%", marginBottom: "10%" }}>
+        <div className="row " id="content" style={{ marginTop: "5%", marginBottom: "10%" }}>
 
-          <div className="col m3 border">
+          <div className="col-md-3 border" >
+            <br></br>
             <Profilebox />
+            <br></br>
             <Artistpend />
+            <br></br>
             <Userfollow />
+            <br></br>
             <Userfollowers />
+            <br></br>
             <Userpend />
+            <br></br>
             <Artistfollowers />
+            <br></br>
             <Artistfollow />
+            <br></br>
           </div>
+          <br></br>
 
-
-          <div className="col m9 border">
-
+          <div className="col-md-9 border" >
+            <br></br>
             <Newsfeed />
-
-            <div className="col m9 border" id="right" >
-
-              <Newsfeed />
-
-            </div>
-
-
           </div>
-          </div>
-          </div>
-          );
-        }
-      }
-      
-      export default Newsfeedcontainer;
-      
-      
+          <br></br>
+
+        </div>
+      </div>
+
+    );
+  }
+}
+
+export default Newsfeedcontainer;
+
+

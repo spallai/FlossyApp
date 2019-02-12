@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import 'whatwg-fetch';
-import {Redirect} from 'react-router-dom';
+import { Redirect } from 'react-router-dom';
 
 import {
   getFromStorage,
@@ -239,38 +239,38 @@ class Login extends Component {
     }
     if (redirect) {
       console.log('hit redirect');
-      return <Redirect to='/newsfeed'/>; 
+      return <Redirect to='/newsfeed' />;
     }
     if (!token) {
       if (this.props.type === 'login') {
         return (
           <div>
-          <div>
-            {
-              (signInError) ? (
-                <p>{signInError}</p>
-              ) : (null)
-            }
-            <p>Sign In</p>
-            <input
-              type="email"
-              placeholder="Email"
-              value={signInEmail}
-              onChange={this.onTextboxChangeSignInEmail}
-            />
-            <br />
-            <input
-              type="password"
-              placeholder="Password"
-              value={signInPassword}
-              onChange={this.onTextboxChangeSignInPassword}
-            />
-            <br />
-            <a onClick={this.onSignIn} class="waves-effect waves-light btn-large text-white  landingBttn"><i class="material-icons supervisor_account left"></i>Submit</a>
-          </div>
+            <div>
+              {
+                (signInError) ? (
+                  <p>{signInError}</p>
+                ) : (null)
+              }
+              <p>Sign In</p>
+              <input
+                type="email"
+                placeholder="Email"
+                value={signInEmail}
+                onChange={this.onTextboxChangeSignInEmail}
+              />
+              <br />
+              <input
+                type="password"
+                placeholder="Password"
+                value={signInPassword}
+                onChange={this.onTextboxChangeSignInPassword}
+              />
+              <br />
+              <a onClick={this.onSignIn} className="waves-effect waves-light btn-large text-white  landingBttn"><i className="material-icons supervisor_account left"></i>Submit</a>
+            </div>
           </div>
         )
-      }  else {
+      } else {
         return (
           <div>
             {
@@ -303,9 +303,9 @@ class Login extends Component {
               value={signUpPassword}
               onChange={this.onTextboxChangeSignUpPassword}
             /><br />
-            <a onClick={this.onSignUp}class="waves-effect waves-light btn-large text-white  landingBttn"><i class="material-icons supervisor_account left"></i>Submit</a>
+            <a onClick={this.onSignUp} className="waves-effect waves-light btn-large text-white  landingBttn"><i className="material-icons supervisor_account left"></i>Submit</a>
           </div>
-      );
+        );
       }
 
     }
