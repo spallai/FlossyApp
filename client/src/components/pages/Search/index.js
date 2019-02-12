@@ -6,7 +6,7 @@ class Search extends React.Component {
 
   render() {
     return (
-    <h2>Hello I am the search page!!!!</h2>
+      <h2>Hello I am the search page!!!!</h2>
     );
   }
 }

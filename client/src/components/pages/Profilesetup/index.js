@@ -6,7 +6,7 @@ class Profilesetup extends React.Component {
 
   render() {
     return (
-    <h2>Hello I am the Profilesetup page</h2>
+      <h2>Hello I am the Profilesetup page</h2>
     );
   }
 }

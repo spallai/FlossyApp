@@ -11,24 +11,24 @@ class Profilebox extends React.Component {
     return (
       <div className="row">
         <div className="col m3">
-          <h2 className="header">User Profile</h2>
+          <h3 className="header text-center">User Profile</h3>
           <div className="card horizontal">
             <div className="card-image">
-              <img className="userpic" src={userpic} alt="userpic"/>
-      </div>
-              <div className="card-stacked">
-                <div className="card-content">
-                  <p>Email: user@gmail.com</p>
-                  <p>Phone: 213.878.9000</p>
-                  <p>Website: www.makeupsquad.com</p>
+              <img className="userpic img-fluid img-thumbnail text-center" src={userpic} alt="userpic" />
+            </div>
+            <div className="card-stacked text-center">
+              <div className="card-content text-center">
+                <p>Email: user@gmail.com</p>
+                <p>Phone: 213.878.9000</p>
+                <p>Website: www.makeupsquad.com</p>
 
-                </div>
               </div>
             </div>
           </div>
+        </div>
       </div>
-      );
-    }
+    );
   }
-  
-  export default Profilebox;
+}
+
+export default Profilebox;
