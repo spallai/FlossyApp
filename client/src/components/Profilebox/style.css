@@ -30,6 +30,10 @@
     float: right;
 }
 
+.chip-hash{
+    width: 105px;
+    margin-left: 5px;
+}
 .card .card-image img {
     display: block;
     border-radius: 2px 2px 0 0;
