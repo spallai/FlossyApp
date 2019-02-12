@@ -16,10 +16,10 @@ class Navbar extends React.Component {
       <div className="col m12">
         
         <ul id="nav-mobile" className="right hide-on-med-and-down">
-          <li><Link to= "/login"> Sign In/Sign up</Link></li>
+          <li><Link to= "/"> Sign In/Sign up</Link></li>
           <li><Link to="/newsfeed">Newsfeed</Link></li>
           <li><Link to="/browse">Browse</Link></li>
-          <li><Link to= "/upload"> Upload</Link></li>
+          <li><Link to= "/"> Logout</Link></li>
         </ul>
       </div>
     </nav>

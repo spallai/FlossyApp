@@ -1,6 +1,8 @@
 import React from "react";
 import "./style.css";
-import Login from "../Login";
+import SignIn from "../SignIn";
+import SignUp from "../SignUp";
+import {Link} from "react-router-dom";
 
 class Landing extends React.Component {
   state = {
@@ -21,8 +23,8 @@ class Landing extends React.Component {
   }
 
   render() {
-    let login = this.state.login ? <Login type="login"/> : null;
-    let signUp = this.state.signUp ? <Login type="signup"/> : null;
+    let login = this.state.login ? <SignIn type="login"/> : null;
+    let signUp = this.state.signUp ? <SignUp type="signup"/> : null;
 
     return (
 <div className="container center-align " style={{marginTop:"6%"}}>
