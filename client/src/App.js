@@ -18,7 +18,6 @@ class App extends Component {
           <Navbar />
 
           <Switch>
-            <Route exact path="/login" component={Login} />
             <Route exact path="/newsfeed" component={Newsfeedcontainer} />
             <Route exact path="/profilebox" component={Profilebox} />
             <Route exact path="/" component={Landing} />

@@ -10,13 +10,8 @@ class Profilebox extends React.Component {
   render() {
     return (
       <div className="row">
-<<<<<<< HEAD
-        <div className="col s12 m7">
-          <h3 className="header text-center">User Profile</h3>
-=======
         <div className="col m3">
           <h2 className="header">User Profile</h2>
->>>>>>> SBranch
           <div className="card horizontal">
             <div className="card-image">
               <img className="userpic img-fluid img-thumbnail text-center" src={userpic} alt="userpic" />
