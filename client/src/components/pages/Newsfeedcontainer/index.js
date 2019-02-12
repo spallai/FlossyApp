@@ -1,8 +1,8 @@
 import React from "react";
 import Profilebox from "../../Profilebox";
 import Artistpend from "../../Artistpend";
-// import Artistbooking from "../../Artistbooking/index.js";
 import Userpend from "../../Userpend";
+import UserHist from "../../UserHist";
 import Userfollowers from "../../Userfollowers";
 import Userfollow from "../../Userfollow";
 import Newsfeed from "../../Newsfeed"
@@ -25,6 +25,7 @@ class Newsfeedcontainer extends React.Component {
               <Userfollow />
               <Userfollowers />
               <Userpend />
+              <UserHist />
           </div>
           <br></br>
 

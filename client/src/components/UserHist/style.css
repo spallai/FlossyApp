@@ -1,0 +1,12 @@
+.messageContainer {
+    background-color:white;
+    margin: 5px;
+    border-radius: 25px;
+    border: 4px, solid, teal;
+    color: black
+}
+
+.col {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
