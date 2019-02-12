@@ -5,8 +5,7 @@ class AUpload extends React.Component {
   };
 
   render() {
-    return (
-    
+    return     
   
   }
 }
