@@ -5,9 +5,11 @@ class AUpload extends React.Component {
   };
 
   render() {
-    return     
-  
-  }
+    return (
+      <div></div>
+    
+    );
+    
 }
-
+}
 export default AUpload;

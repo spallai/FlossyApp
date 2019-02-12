@@ -37,9 +37,9 @@ class Profilebox extends React.Component {
               </div>
             </div>
           </div>
-      </div>
-      );
-    }
+        </div>
+    );
   }
-  
-  export default Profilebox;
+}
+
+export default Profilebox;

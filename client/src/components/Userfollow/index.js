@@ -35,7 +35,7 @@ class Userfollow extends React.Component {
           </div>
         </div>
       </div>
-    </div>      
+      </div>
     );
   }
 }

@@ -1,7 +1,10 @@
 import React from "react";
-import "./style.css"
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
+import "./style.css";
 import logo from "./assets/logo.png";
+
+
+
 
 class Navbar extends React.Component {
   state = {
