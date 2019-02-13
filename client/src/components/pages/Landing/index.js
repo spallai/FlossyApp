@@ -2,9 +2,13 @@ import React from "react";
 import "./style.css";
 import SignIn from "../SignIn";
 import SignUp from "../SignUp";
+<<<<<<< HEAD
 import Navbar from "../../Navbar";
 
 import {Link} from "react-router-dom";
+=======
+// import { Link } from "react-router-dom";
+>>>>>>> fec0cefcad660ff988b91479dad4373d52550360
 
 class Landing extends React.Component {
     constructor (props){
