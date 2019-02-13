@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import 'whatwg-fetch';
 import { Redirect } from 'react-router-dom';
+import "./style.css"
 
 import {
   getFromStorage,
@@ -155,37 +156,30 @@ class SignUp extends Component {
     if (!token) {
       if (this.props.type === 'signup') {
         return (
-          <div>
+          <div >
             {
               (signUpError) ? (
                 <p>{signUpError}</p>
               ) : (null)
             }
-            <h4>Sign Up</h4>
-            <input 
-              type="text"
-              placeholder="First name"
-              value={signUpFirstName}
-              onChange={this.onTextboxChangeSignUpFirstName}
-            /><br />
-            <input
-              type="text"
-              placeholder="Last name" id="last_name"
-              value={signUpLastName}
-              onChange={this.onTextboxChangeSignUpLastName}
-            /><br />
-            <input
-              type="email"
-              placeholder="Email"
-              value={signUpEmail}
-              onChange={this.onTextboxChangeSignUpEmail}
-            /><br />
-            <input
-              type="password"
-              placeholder="Password"
-              value={signUpPassword}
-              onChange={this.onTextboxChangeSignUpPassword}
-            /><br />
+            <h3>Sign Up</h3>
+            
+            <div className="input-field" >
+              <input className="validate" id="first_name" type="text" value={signUpFirstName}
+                onChange={this.onTextboxChangeSignUpFirstName} /><label id="placeholdertext" for="first_name">First Name:</label></div>
+         
+            <div className="input-field" >
+              <input className="validate" id="last_name" type="text" value={signUpLastName}
+                onChange={this.onTextboxChangeSignUpLastName} /><label id="placeholdertext" for="last_name">Last Name:</label></div>
+            
+            <div className="input-field" >
+              <input className="validate" id="email" type="email" value={signUpEmail}
+                onChange={this.onTextboxChangeSignUpEmail} /><label id="placeholdertext" for="email">Email:</label></div>
+            
+            <div className="input-field" >
+              <input className="validate" id="password" type="password" value={signUpPassword}
+                 onChange={this.onTextboxChangeSignUpPassword}/><label id="placeholdertext" for="password">Password:</label></div>
+            <br />
             <a onClick={this.onSignUp} className="waves-effect waves-light btn-large text-white  landingBttn"><i className="material-icons supervisor_account left"></i>Submit</a>
           </div>
         );
