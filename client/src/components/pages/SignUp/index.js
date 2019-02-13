@@ -131,7 +131,7 @@ class SignUp extends Component {
       });
   }
 
-  
+
 
   render() {
     const {
@@ -161,8 +161,8 @@ class SignUp extends Component {
                 <p>{signUpError}</p>
               ) : (null)
             }
-            <p>Sign Up</p>
-            <input
+            <h4>Sign Up</h4>
+            <input 
               type="text"
               placeholder="First name"
               value={signUpFirstName}
@@ -170,7 +170,7 @@ class SignUp extends Component {
             /><br />
             <input
               type="text"
-              placeholder="Last name"
+              placeholder="Last name" id="last_name"
               value={signUpLastName}
               onChange={this.onTextboxChangeSignUpLastName}
             /><br />
@@ -195,3 +195,5 @@ class SignUp extends Component {
 }
 
 export default SignUp;
+
+
