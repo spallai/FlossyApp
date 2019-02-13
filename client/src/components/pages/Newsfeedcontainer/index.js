@@ -5,17 +5,25 @@ import Userpend from "../../Userpend";
 import UserHist from "../../UserHist";
 import Userfollowers from "../../Userfollowers";
 import Userfollow from "../../Userfollow";
-import Newsfeed from "../../Newsfeed"
-import "./style.css"
+import Navbar from "../../Navbar";
+import Newsfeed from "../../Newsfeed";
+import "./style.css";
 
 class Newsfeedcontainer extends React.Component {
-  state = {
-  };
+  constructor(props) {
+    super(props);
+    this.state = {}
+  }
+
+  logout = () => {
+    console.log(this.props)
+    this.props.history.push('/')
+  }
 
   render() {
     return (
-
       <div >
+        <Navbar {...this.props} logout={this.logout} />
         <div className="row " id="content" style={{ marginTop: "5%", marginBottom: "10%" }}>
 
           <div className="col-md-4 border" >

@@ -50,33 +50,7 @@ class SignOut extends Component {
   }
 
   logout() {
-    this.setState({
-      isLoading: true,
-    });
-    const obj = getFromStorage('../../../App.js');
-    if (obj && obj.token) {
-      const { token } = obj;
-      // Verify token
-      fetch('/api/account/logout?token=' + token)
-        .then(res => res.json())
-        .then(json => {
-          if (json.success) {
-            this.setState({
-              token: '',
-              isLoading: false,
-              redirect: true
-            });
-          } else {
-            this.setState({
-              isLoading: false,
-            });
-          }
-        });
-    } else {
-      this.setState({
-        isLoading: false,
-      });
-    }
+
   }
 
   render() {

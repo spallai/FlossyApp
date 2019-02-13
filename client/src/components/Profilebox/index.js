@@ -2,6 +2,7 @@ import React from "react";
 import "./style.css"
 import userpic from "./assets/userpic.jpeg";
 import iconset from "./assets/iconset.jpeg";
+import Navbar from "../Navbar";
 
 
 class Profilebox extends React.Component {
@@ -10,6 +11,7 @@ class Profilebox extends React.Component {
 
   render() {
     return (
+      <div>
       <div className="row">
         <div className="col m3">
           <h3 className="header"></h3>
@@ -40,6 +42,7 @@ class Profilebox extends React.Component {
               </div>
             </div>
           </div>
+        </div>
         </div>
     );
   }

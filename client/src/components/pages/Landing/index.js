@@ -2,11 +2,15 @@ import React from "react";
 import "./style.css";
 import SignIn from "../SignIn";
 import SignUp from "../SignUp";
+import Navbar from "../../Navbar";
+
 import {Link} from "react-router-dom";
 
 class Landing extends React.Component {
-  state = {
-  };
+    constructor (props){
+        super(props);
+        this.state = {}
+    }
 
   handleLoginModal = () => {
     this.setState({
@@ -22,12 +26,15 @@ class Landing extends React.Component {
     })
   }
 
+
   render() {
-    let login = this.state.login ? <SignIn type="login" /> : null;
-    let signUp = this.state.signUp ? <SignUp type="signup" /> : null;
+          let login = this.state.login ? <SignIn {...this.props} type="login" /> : null;
+    let signUp = this.state.signUp ? <SignUp {...this.props} type="signup" /> : null;
 
     return (
-      <div className="container center-align " style={{ marginTop: "10%" }}>
+        <div>          
+            <Navbar handleLoginModal = {this.handleLoginModal} handleSignUpModal= {this.handleSignUpModal} {...this.props} />
+      <div className="container center-align " style={{ marginTop: "6%" }}>
         <div className="row">
           <div className="col m2" >
             <a onClick={this.handleLoginModal} className="waves-effect waves-light btn-large text-white  landingBttn"><i className="material-icons supervisor_account left"></i>Login</a>
@@ -36,6 +43,7 @@ class Landing extends React.Component {
             {signUp}
           </div>
         </div>
+      </div>
       </div>
 
     );
