@@ -14,7 +14,7 @@ class Artistpend extends React.Component {
               <span className="card-title">Your pending appointments and messages</span>
               <div class="collection">
                 <a href="#!" class="collection-item"><span class="new badge">23</span>EMAIL</a>
-                <a href="#!" class="collection-item"><span class="new badge">13</span>APPOINTMENT REQUESTS</a>
+                <a href="#!" class="collection-item"><span class="badge">13</span>APPOINTMENT REQUESTS</a>
               </div>
               <br></br>
             </div>
