@@ -1,12 +1,20 @@
 import React from "react";
 import "./style.css";
+import Navbar from "../Navbar";
 
 class Post extends React.Component {
   state = {
   };
 
+  logout = () => {
+    console.log(this.props)
+    this.props.history.push('/')
+  }
+
   render() {
     return (
+      <div>
+        <Navbar logout = {this.logout} />
         <div className="row">
     <form className="col s12">
       <div className="row">
@@ -29,6 +37,7 @@ class Post extends React.Component {
         </div>
         </div>
     </form>
+  </div>
   </div>
     );
   }

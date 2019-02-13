@@ -21,7 +21,6 @@ class Navbar extends React.Component {
   }
 
   render() {
-<<<<<<< HEAD
     if (JSON.parse(localStorage.getItem("userData"))){
       return (
         <nav className="navbar" >
@@ -32,7 +31,7 @@ class Navbar extends React.Component {
           
           <ul id="nav-mobile" className="right hide-on-med-and-down">
             <li><Link to="/newsfeed">Newsfeed</Link></li>
-            <li><Link to="/browse">Browse</Link></li>
+            <li><Link to="/post">Post</Link></li>
            <button onClick={this.handleLogOut}>
              log out
            </button>
@@ -56,25 +55,6 @@ class Navbar extends React.Component {
       </nav>
       );
     }
-   
-=======
-    return (
-      <nav className="navbar" >
-      <a href="#" className="brand-logo" alt="logo"></a>
-      <img className="logo" alt="logo" src={logo} ></img>
-      <h2><Link to= "/">uFlossy</Link></h2>
-      <div className="col m12">
-        
-        <ul id="nav-mobile" className="right hide-on-med-and-down">
-          <li><Link to= "/"> Sign In/Sign up</Link></li>
-          <li><Link to="/newsfeed">Newsfeed</Link></li>
-          <li><Link to="/post">Post</Link></li>
-          <li><Link to= "/"> Logout</Link></li>
-        </ul>
-      </div>
-    </nav>
-    );
->>>>>>> 1f2412153fbbaa29c02ec2fb39a5458f49035d58
   }
 }
 

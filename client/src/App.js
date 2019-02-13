@@ -19,12 +19,8 @@ class App extends Component {
           <Switch>
             <Route exact path="/newsfeed" render={(props) => <Newsfeedcontainer {...props} />} />
             <Route exact path="/profilebox" component={Profilebox} />
-<<<<<<< HEAD
             <Route exact path="/" render={(props) => <Landing {...props}/>} />
-=======
-            <Route exact path="/post" component={Post} />
-            <Route exact path="/" component={Landing} />
->>>>>>> 1f2412153fbbaa29c02ec2fb39a5458f49035d58
+            <Route exact path="/post" render={(props) => <Post {...props}/>} />
           </Switch>
 
           <Footer />
