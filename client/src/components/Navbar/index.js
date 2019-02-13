@@ -14,7 +14,7 @@ class Navbar extends React.Component {
     return (
       <nav className="navbar" >
       <a href="#" className="brand-logo" alt="logo"></a>
-      <img className="logo" src={logo} ></img>
+      <img className="logo" alt="logo" src={logo} ></img>
       <h2><Link to= "/">uFlossy</Link></h2>
       <div className="col m12">
         
