@@ -27,7 +27,7 @@ class Landing extends React.Component {
     let signUp = this.state.signUp ? <SignUp type="signup" /> : null;
 
     return (
-      <div className="container center-align " style={{ marginTop: "6%" }}>
+      <div className="container center-align " style={{ marginTop: "10%" }}>
         <div className="row">
           <div className="col m2" >
             <a onClick={this.handleLoginModal} className="waves-effect waves-light btn-large text-white  landingBttn"><i className="material-icons supervisor_account left"></i>Login</a>
