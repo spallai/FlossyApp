@@ -1,4 +1,5 @@
 import React from "react";
+import "./style.css";
 import followpic1 from "./assets/followpic1.jpg";
 import followpic2 from "./assets/followpic2.jpeg";
 import followpic3 from "./assets/followpic3.jpg";

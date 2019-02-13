@@ -1,6 +1,7 @@
 import React from "react";
 import "./style.css"
 import userpic from "./assets/userpic.jpeg";
+import iconset from "./assets/iconset.jpeg";
 
 
 class Profilebox extends React.Component {
@@ -11,16 +12,18 @@ class Profilebox extends React.Component {
     return (
       <div className="row">
         <div className="col m3">
-          <h3 className="header text-center">User Profile</h3>
+          <h3 className="header"></h3>
           <div className="card horizontal">
             <div className="card-image">
               <img className="userpic" src={userpic} alt="userpic"/>
       </div>
               <div className="card-stacked">
                 <div className="card-content">
-                  <p>Email: user@gmail.com</p>
+                  <h4>Jen Vargas</h4>
+                  <p>Email: jvargas99@ggmail.com</p>
                   <p>Phone: 213.878.9000</p>
                   <p>Website: www.makeupsquad.com</p>
+                  <img className="iconset" src={iconset} alt="iconset"/>
                 </div>
               <div className="chip chip-hash">
                 #hair

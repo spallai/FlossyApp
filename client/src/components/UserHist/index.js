@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.css"
 
-class Artistpend extends React.Component {
+class UserHist extends React.Component {
   state = {
   };
 
@@ -11,10 +11,10 @@ class Artistpend extends React.Component {
         <div className="col s12 m6">
           <div className="card profileCards darken-1">
             <div className="card-content white-text">
-              <span className="card-title">Your pending appointments and messages</span>
+              <span className="card-title">uFlossy History</span>
               <div class="collection">
-                <a href="#!" class="collection-item"><span class="new badge">23</span>EMAIL</a>
-                <a href="#!" class="collection-item"><span class="new badge">13</span>APPOINTMENT REQUESTS</a>
+                <a href="#!" class="collection-item"><span class="new badge">223</span>PHOTOS</a>
+                <a href="#!" class="collection-item"><span class="new badge">113</span>VIDEOS</a>
               </div>
               <br></br>
             </div>
@@ -26,4 +26,4 @@ class Artistpend extends React.Component {
   }
 }
 
-export default Artistpend;
+export default UserHist;

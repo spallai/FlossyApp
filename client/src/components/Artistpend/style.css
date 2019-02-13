@@ -5,3 +5,8 @@
     border: 4px, solid, teal;
     color: black
 }
+
+.col {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}

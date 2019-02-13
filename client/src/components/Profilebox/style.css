@@ -48,3 +48,13 @@
     padding: 10px;
     border-radius: 0 0 2px 2px;
 }
+
+.col {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.iconset{
+    width: 150px;
+    height: 100px;
+}
