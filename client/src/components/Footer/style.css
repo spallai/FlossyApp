@@ -1,9 +1,12 @@
-body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-  }
 
-  main {
-    flex: 1 0 auto;
+
+  .footer {
+    min-height: 35px;  
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 15px;
+    background: #ee6e73;
   }
+  
