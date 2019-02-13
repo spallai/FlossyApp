@@ -7,12 +7,12 @@
   }
 
 
-#content {
+/* #content {
     height: 100%;
     display: flex;
     flex: 1;
   
-}
+} */
 
 body,
 html {
@@ -23,4 +23,24 @@ background-position: center;
 background-size: cover;
 }
 
+
+#wrapper {
+  width: 100%;
+
+}
+
+#side-nav {
+  position: fixed;
+  width: 400px;
+  height:120vh;
+  overflow-y: scroll;
+  
+}
+
+#content-wrapper {
+  margin-left: 450px;
+  padding: 0 10px;
+  overflow-y: scroll;
+  
+}
 

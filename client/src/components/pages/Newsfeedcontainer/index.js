@@ -15,10 +15,10 @@ class Newsfeedcontainer extends React.Component {
   render() {
     return (
 
-      <div >
-        <div className="row " id="content" style={{ marginTop: "5%", marginBottom: "10%" }}>
+      <div id="wrapper">
+        <div className="row "  style={{ marginTop: "5%", marginBottom: "10%" }}>
 
-          <div className="col-md-4 border" >
+          <div className="col-lg-5" id="side-nav" >
             <br></br>
             <Profilebox />
               <Artistpend />
@@ -29,7 +29,7 @@ class Newsfeedcontainer extends React.Component {
           </div>
           <br></br>
 
-          <div className="col-md-8 border" >
+          <div className="col-lg-7" id="content-wrapper" >
             <br></br>
             <Newsfeed />
           </div>
