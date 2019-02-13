@@ -4,9 +4,8 @@ import './App.css';
 import Footer from './components/Footer'
 import Navbar from './components/Navbar'
 import Landing from './components/pages/Landing'
-// import SignIn from './components/pages/SignIn'
-// import SignUp from './components/pages/SignUp'
 import Profilebox from './components/Profilebox'
+import Post from './components/Post'
 import Newsfeedcontainer from './components/pages/Newsfeedcontainer/index.js';
 
 
@@ -20,6 +19,7 @@ class App extends Component {
           <Switch>
             <Route exact path="/newsfeed" component={Newsfeedcontainer} />
             <Route exact path="/profilebox" component={Profilebox} />
+            <Route exact path="/post" component={Post} />
             <Route exact path="/" component={Landing} />
           </Switch>
 
