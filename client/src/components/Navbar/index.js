@@ -45,13 +45,13 @@ class Navbar extends React.Component {
         <a href="#" class="brand-logo" alt="logo"></a>
         <img class="logo" src={logo} ></img>
         <h2><Link to= "/">uFlossy</Link></h2>
-        <div className="col m12">
+        {/* <div className="col m12">
           
           <ul id="nav-mobile" className="right hide-on-med-and-down">
             <li onClick= {this.props.handleLoginModal}>Sign In</li>
             <li onClick= {this.props.handleSignUpModal}>Sign In</li>
           </ul>
-        </div>
+        </div> */}
       </nav>
       );
     }
