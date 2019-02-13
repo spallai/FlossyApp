@@ -24,7 +24,13 @@ const UserSchema = new mongoose.Schema({
   isDeleted: {
     type: Boolean,
     default: false
-  }
+  },
+  posts: [
+    {
+      type: Schema.Types.ObjectID, 
+      ref: "NewPost"
+    }
+  ]
 });
 
 UserSchema.methods.generateHash = function(password) {
