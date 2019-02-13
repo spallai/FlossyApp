@@ -9,7 +9,7 @@ class Product extends React.Component {
   componentDidMount() {
     // grab the id (upc) from the url
     // because this is a stateful component, we must use "this.props"
-    axios.get(`/api/products/${this.props.match.params.id}`).then((response) => {
+    axios.get("/api/products").then((response) => {
       this.setState({
         item: response.data
       });

@@ -1,6 +1,8 @@
 const mongoose = require('mongoose');
 const bcrypt = require('bcrypt');
 
+var Schema = mongoose.Schema;
+
 const UserSchema = new mongoose.Schema({
 
   firstName: {
@@ -27,7 +29,7 @@ const UserSchema = new mongoose.Schema({
   },
   posts: [
     {
-      type: Schema.Types.ObjectID, 
+      type: Schema.Types.ObjectId,
       ref: "NewPost"
     }
   ]
@@ -43,4 +45,4 @@ UserSchema.methods.validPassword = function(password) {
 
 const User = mongoose.model('User', UserSchema);
 
-module.exports = User;
+module.exports = User;  

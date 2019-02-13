@@ -1,7 +1,6 @@
 const router = require("express").Router();
 const User = require('../../models/User.js');
-const UserSession = require('../../models/UserSession');
-
+const NewPost = require('../models/NewPost.js')
 
   /*
    * Sign up
