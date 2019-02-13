@@ -115,7 +115,6 @@ class SignIn extends Component {
       if (this.props.type === 'login') {
         return (
           <div>
-<<<<<<< HEAD
           <div>
             {
               (signInError) ? (
@@ -135,27 +134,6 @@ class SignIn extends Component {
             <br />
             <a onClick={this.onSignIn} className="waves-effect waves-light btn-large text-white  landingBttn"><i class="material-icons supervisor_account left"></i>Submit</a>
           </div>
-=======
-            <div>
-              {
-                (signInError) ? (
-                  <p>{signInError}</p>
-                ) : (null)
-              }
-              <h3>Sign In</h3>
-
-              <div className="input-field" >
-                <input className="validate" id="email" type="email" value={signInEmail}
-                  onChange={this.onTextboxChangeSignInEmail} /><label id="placeholdertext" for="email">Email:</label></div>
-
-              <div className="input-field" >
-                <input className="validate" id="password" type="password" value={signInPassword}
-                  onChange={this.onTextboxChangeSignInPassword} /><label id="placeholdertext" for="password">Password:</label></div>
-
-              <br />
-              <a href="#" onClick={this.onSignIn} class="waves-effect waves-light btn-large text-white  landingBttn" ><i class="material-icons supervisor_account left"></i>Submit</a>
-            </div>
->>>>>>> fec0cefcad660ff988b91479dad4373d52550360
           </div>
         )
       }
