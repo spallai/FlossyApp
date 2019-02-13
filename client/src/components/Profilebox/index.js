@@ -11,7 +11,6 @@ class Profilebox extends React.Component {
   render() {
     return (
       <div>
-        <Navbar/>
       <div className="row">
         <div className="col m3">
           <h2 className="header">User Profile</h2>

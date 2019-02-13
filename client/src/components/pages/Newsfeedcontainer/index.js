@@ -5,17 +5,17 @@ import Artistpend from "../../Artistpend";
 import Userpend from "../../Userpend";
 import Userfollowers from "../../Userfollowers";
 import Userfollow from "../../Userfollow";
-import Navbar from "../../Navbar"
-import Newsfeed from "../../Newsfeed"
-import "./style.css"
+import Navbar from "../../Navbar";
+import Newsfeed from "../../Newsfeed";
+import "./style.css";
 
 class Newsfeedcontainer extends React.Component {
-constructor (props) {
-  super(props);
-  this.state = {}
-}
+  constructor(props) {
+    super(props);
+    this.state = {}
+  }
 
-  rerouteAfterLogout = () => {
+  logout = () => {
     console.log(this.props)
     this.props.history.push('/')
   }
@@ -23,16 +23,16 @@ constructor (props) {
   render() {
     return (
       <div >
-      <Navbar rerouteAfterLogout = {this.rerouteAfterLogout} />
+        <Navbar {...this.props} logout={this.logout} />
         <div className="row " id="content" style={{ marginTop: "5%", marginBottom: "10%" }}>
 
           <div className="col-md-3 border" >
             <br></br>
             <Profilebox />
-              <Artistpend />
-              <Userfollow />
-              <Userfollowers />
-              <Userpend />
+            <Artistpend />
+            <Userfollow />
+            <Userfollowers />
+            <Userpend />
           </div>
           <br></br>
 

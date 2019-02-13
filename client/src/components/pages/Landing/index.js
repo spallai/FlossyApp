@@ -26,9 +26,6 @@ class Landing extends React.Component {
     })
   }
 
-  rerouteAfterLogout = () => {
-      this.props.history.push("/");
-  }
 
   render() {
           let login = this.state.login ? <SignIn {...this.props} type="login" /> : null;
@@ -36,7 +33,7 @@ class Landing extends React.Component {
 
     return (
         <div>          
-            <Navbar rerouteAfterLogout={this.rerouteAfterLogout} {...this.props} />
+            <Navbar handleLoginModal = {this.handleLoginModal} handleSignUpModal= {this.handleSignUpModal} {...this.props} />
       <div className="container center-align " style={{ marginTop: "6%" }}>
         <div className="row">
           <div className="col m2" >
