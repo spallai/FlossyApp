@@ -13,7 +13,7 @@ class UserHist extends React.Component {
             <div className="card-content white-text">
               <span className="card-title">uFlossy History</span>
               <div class="collection">
-                <a href="#!" class="collection-item"><span class="new badge">223</span>PHOTOS</a>
+                <a href="#!" class="collection-item"><span class=" badge">223</span>PHOTOS</a>
                 <a href="#!" class="collection-item"><span class="new badge">113</span>VIDEOS</a>
               </div>
               <br></br>
