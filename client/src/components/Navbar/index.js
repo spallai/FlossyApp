@@ -24,16 +24,16 @@ class Navbar extends React.Component {
     if (JSON.parse(localStorage.getItem("userData"))) {
       return (
         <nav className="navbar" >
-          <a href="#" className="brand-logo" alt="logo"></a>
-          <img className="logo" src={logo} ></img>
-          <h2><Link to="/">uFlossy</Link></h2>
-          <div className="col m12">
-
-            <ul id="nav-mobile" className="right hide-on-med-and-down">
-              <li><Link to="/newsfeed">Newsfeed</Link></li>
-              <li><Link to="/post">Post</Link></li>
-              <button onClick={this.handleLogOut}>
-                log out
+        <a href="#" class="brand-logo" alt="logo"></a>
+        <img class="logo" src={logo} ></img>
+        <h2><Link to= "/">uFlossy</Link></h2>
+        <div className="col m12">
+          
+          <ul id="nav-mobile" className="right hide-on-med-and-down">
+            <li><Link to="/newsfeed">Newsfeed</Link></li>
+            <li><Link to="/post">Post</Link></li>
+           <button className="signOut" onClick={this.handleLogOut}>
+             Logout
            </button>
             </ul>
           </div>
