@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import './App.css';
 import Footer from './components/Footer'
-import Navbar from './components/Navbar'
+// import Navbar from './components/Navbar'
 import Landing from './components/pages/Landing'
 import Profilebox from './components/Profilebox'
 import Post from './components/Post'
