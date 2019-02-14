@@ -162,23 +162,23 @@ class SignUp extends Component {
                 <p>{signUpError}</p>
               ) : (null)
             }
-            <h3>Sign Up</h3>
-            
+            <h3 style={{color:"black"}}>Sign Up</h3>
+
             <div className="input-field" >
               <input className="validate" id="first_name" type="text" value={signUpFirstName}
                 onChange={this.onTextboxChangeSignUpFirstName} /><label id="placeholdertext" for="first_name">First Name:</label></div>
-         
+
             <div className="input-field" >
               <input className="validate" id="last_name" type="text" value={signUpLastName}
                 onChange={this.onTextboxChangeSignUpLastName} /><label id="placeholdertext" for="last_name">Last Name:</label></div>
-            
+
             <div className="input-field" >
               <input className="validate" id="email" type="email" value={signUpEmail}
                 onChange={this.onTextboxChangeSignUpEmail} /><label id="placeholdertext" for="email">Email:</label></div>
-            
+
             <div className="input-field" >
               <input className="validate" id="password" type="password" value={signUpPassword}
-                 onChange={this.onTextboxChangeSignUpPassword}/><label id="placeholdertext" for="password">Password:</label></div>
+                onChange={this.onTextboxChangeSignUpPassword} /><label id="placeholdertext" for="password">Password:</label></div>
             <br />
             <a onClick={this.onSignUp} className="waves-effect waves-light btn-large text-white  landingBttn"><i className="material-icons supervisor_account left"></i>Submit</a>
           </div>

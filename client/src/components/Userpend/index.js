@@ -12,8 +12,8 @@ class Userpend extends React.Component {
           <div className="card profileCards darken-1">
             <div className="card-content white-text">
               <span className="card-title">Your confirmed appointments</span>
-              <div class="collection">
-                <a href="#!" class="collection-item"><span class="new badge">3</span>CONFIRMED APPOINTMENTS</a>
+              <div className="collection">
+                <a href="#!" className="collection-item"><span className="new badge">3</span>CONFIRMED APPOINTMENTS</a>
               </div>
               <br></br>
             </div>

@@ -1,6 +1,4 @@
-
-
-  .footer {
+.footer {
     min-height: 35px;  
     position: fixed;
     bottom: 0;
@@ -8,5 +6,9 @@
     right: 0;
     padding: 15px;
     background: #ee6e73;
+  }
+
+  .container {
+    color: white;
   }
   

@@ -13,6 +13,11 @@ nav .brand-logo{
 
 }
 
+.navBar {
+    margin-top: -100px;
+    margin-bottom: -100px;
+}
+
 .signOut {
     border: none;
     background-color: transparent;
