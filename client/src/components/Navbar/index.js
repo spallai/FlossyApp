@@ -24,8 +24,8 @@ class Navbar extends React.Component {
     if (JSON.parse(localStorage.getItem("userData"))){
       return (
         <nav className="navbar" >
-        <a href="#" class="brand-logo" alt="logo"></a>
-        <img class="logo" src={logo} ></img>
+        <a href="#" className="brand-logo" alt="logo"></a>
+        <img className="logo" src={logo} ></img>
         <h2><Link to= "/">uFlossy</Link></h2>
         <div className="col m12">
           
@@ -42,8 +42,8 @@ class Navbar extends React.Component {
     } else {
       return (
         <nav className="navbar" >
-        <a href="#" class="brand-logo" alt="logo"></a>
-        <img class="logo" src={logo} ></img>
+        <a href="#" className="brand-logo" alt="logo"></a>
+        <img className="logo" src={logo} ></img>
         <h2><Link to= "/">uFlossy</Link></h2>
         {/* <div className="col m12">
           

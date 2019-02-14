@@ -17,19 +17,19 @@ class Userfollowers extends React.Component {
           <div className="card-content white-text">
             <span className="card-title">Your followers</span>
             <br></br>
-            <div class="chip">
+            <div className="chip">
                 <img className="followpic" src={followingpic1} alt="followingpic" />
                   Joe Smith
                 </div>
-                <div class="chip">
+                <div className="chip">
                 <img className="followpic" src={followingpic2} alt="followingpic" />
                   Bill Smith
                 </div> 
-                <div class="chip">
+                <div className="chip">
                 <img className="followpic" src={followingpic3} alt="followingpic" />
                   David Smith
                 </div> 
-                <div class="chip">
+                <div className="chip">
                 <img className="followpic" src={followingpic4} alt="followingpic" />
                   Jennie Smith
                 </div>   

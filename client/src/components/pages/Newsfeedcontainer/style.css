@@ -32,7 +32,7 @@ background-size: cover;
 #side-nav {
   position: fixed;
   width: 400px;
-  height:120vh;
+  height:85vh;
   overflow-y: scroll;
   
 }

@@ -19,8 +19,8 @@ class Newsfeed extends React.Component {
             <img className="newsfeedimg img-fluid img-thumbnail" src={feed1} alt="feedone" />
             <br></br>
             <br></br>
-            <div class="video-container">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/d8bct2_ix4U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div className="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/d8bct2_ix4U" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullscreen></iframe>
             </div>
             <br></br>
             <br></br>

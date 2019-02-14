@@ -132,7 +132,7 @@ class SignIn extends Component {
                  onChange={this.onTextboxChangeSignInPassword}/><label id="placeholdertext" for="password">Password:</label></div>
 
             <br />
-            <a onClick={this.onSignIn} className="waves-effect waves-light btn-large text-white  landingBttn"><i class="material-icons supervisor_account left"></i>Submit</a>
+            <a onClick={this.onSignIn} className="waves-effect waves-light btn-large text-white  landingBttn"><i className="material-icons supervisor_account left"></i>Submit</a>
           </div>
           </div>
         )
