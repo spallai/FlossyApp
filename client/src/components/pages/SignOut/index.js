@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import 'whatwg-fetch';
 import {Redirect} from 'react-router-dom';
+import "./style.css"
 
 import {
   getFromStorage,
@@ -64,7 +65,7 @@ class SignOut extends Component {
     return (
       <div>
         <p>Account</p>
-        <button onClick={this.logout}>Logout</button>
+        <button  onClick={this.logout}>Logout</button>
       </div>
     );
   }

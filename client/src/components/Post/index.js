@@ -15,8 +15,10 @@ class Post extends React.Component {
     return (
       <div>
         <Navbar logout = {this.logout} />
+      
+        <div className="container postContainer">
         <div className="row">
-    <form className="col s12">
+    <form className="col s12 postForm">
       <div className="row">
         <div className="input-field col s12">
           <input id="user" type="text" className="validate"/>
@@ -37,6 +39,7 @@ class Post extends React.Component {
         </div>
         </div>
     </form>
+  </div>
   </div>
   </div>
     );

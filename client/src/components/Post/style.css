@@ -3,3 +3,15 @@
     margin-top: 20px;
     margin-bottom: 20px;
 }
+
+.postForm {
+    background-color: rgba(255,255,255, 0.6);
+    padding: 0%;
+    border: 4px salmon solid;
+   border-radius: 20px;
+}
+
+.postContainer {
+    margin-top: 10%;
+    margin-bottom: 15%;
+}

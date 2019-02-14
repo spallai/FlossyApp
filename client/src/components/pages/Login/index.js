@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import 'whatwg-fetch';
 import {Redirect} from 'react-router-dom';
-
+import "./style.css"
 import {
   getFromStorage,
   setInStorage,
@@ -235,7 +235,7 @@ class Login extends Component {
     } = this.state;
 
     if (isLoading) {
-      return (<div><p>Loading...</p></div>);
+      return (<div><p>Loading...</p><br></br><img src="https://cdn.dribbble.com/users/731791/screenshots/3172297/final.gif"></img></div>);
     }
     if (redirect) {
         console.log('hit redirect');
