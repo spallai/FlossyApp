@@ -27,7 +27,7 @@ class Navbar extends React.Component {
         <a href="#" class="brand-logo" alt="logo"></a>
         <img class="logo" src={logo} ></img>
         <h2><Link to= "/">uFlossy</Link></h2>
-        <div className="col m12">
+        <div style={{marginTop:"-1%", marginBottom:"-1%"}} className="col m12 navBar">
           
           <ul id="nav-mobile" className="right hide-on-med-and-down">
             <li><Link to="/newsfeed">Newsfeed</Link></li>

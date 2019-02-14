@@ -122,7 +122,7 @@ class SignIn extends Component {
                 <p>{signInError}</p>
               ) : (null)
             }
-            <h3>Sign In</h3>
+            <h3 style={{color:"black"}} >Sign In</h3>
           
             <div className="input-field" >
               <input className="validate" id="email" type="email" value={signInEmail}

@@ -162,7 +162,7 @@ class SignUp extends Component {
                 <p>{signUpError}</p>
               ) : (null)
             }
-            <h3>Sign Up</h3>
+            <h3 style={{color:"black"}}>Sign Up</h3>
 
             <div className="input-field" >
               <input className="validate" id="first_name" type="text" value={signUpFirstName}
