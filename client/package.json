@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "description": "Project 3 FlossyApp",
   "private": true,
+  "homepage": "https://github.com/DevonBurdick/FlossyApp",
   "proxy": "http://localhost:3001/",
   "dependencies": {
     "@fortawesome/fontawesome-free-webfonts": "^1.0.2",
