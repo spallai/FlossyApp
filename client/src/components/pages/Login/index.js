@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import 'whatwg-fetch';
-import {Redirect} from 'react-router-dom';
+import { Redirect } from 'react-router-dom';
 
 import {
   getFromStorage,
@@ -238,9 +238,9 @@ class Login extends Component {
       return (<div><p>Loading...</p></div>);
     }
     if (redirect) {
-        console.log('hit redirect');
-        return <Redirect to='/newsfeed'/>; 
-      }
+      console.log('hit redirect');
+      return <Redirect to='/newsfeed' />;
+    }
     if (!token) {
       return (
         <div>

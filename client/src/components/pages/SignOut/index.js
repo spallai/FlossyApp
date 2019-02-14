@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import 'whatwg-fetch';
-import {Redirect} from 'react-router-dom';
+import { Redirect } from 'react-router-dom';
 
 import {
   getFromStorage,
@@ -58,9 +58,9 @@ class SignOut extends Component {
       redirect
     } = this.state;
     if (redirect) {
-        console.log('hit redirect');
-        return <Redirect to='/'/>; 
-      }
+      console.log('hit redirect');
+      return <Redirect to='/' />;
+    }
     return (
       <div>
         <p>Account</p>

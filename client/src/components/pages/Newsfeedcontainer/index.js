@@ -29,11 +29,11 @@ class Newsfeedcontainer extends React.Component {
           <div className="col-lg-5" id="side-nav" >
             <br></br>
             <Profilebox />
-              <Artistpend />
-              <Userfollow />
-              <Userfollowers />
-              <Userpend />
-              <UserHist />
+            <Artistpend />
+            <Userfollow />
+            <Userfollowers />
+            <Userpend />
+            <UserHist />
           </div>
           <br></br>
 

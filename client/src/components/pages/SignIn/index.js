@@ -115,25 +115,25 @@ class SignIn extends Component {
       if (this.props.type === 'login') {
         return (
           <div>
-          <div>
-            {
-              (signInError) ? (
-                <p>{signInError}</p>
-              ) : (null)
-            }
-            <h3>Sign In</h3>
-          
-            <div className="input-field" >
-              <input className="validate" id="email" type="email" value={signInEmail}
-                 onChange={this.onTextboxChangeSignInEmail}/><label id="placeholdertext" for="email">Email:</label></div>
+            <div>
+              {
+                (signInError) ? (
+                  <p>{signInError}</p>
+                ) : (null)
+              }
+              <h3>Sign In</h3>
 
-            <div className="input-field" >
-              <input className="validate" id="password" type="password" value={signInPassword}
-                 onChange={this.onTextboxChangeSignInPassword}/><label id="placeholdertext" for="password">Password:</label></div>
+              <div className="input-field" >
+                <input className="validate" id="email" type="email" value={signInEmail}
+                  onChange={this.onTextboxChangeSignInEmail} /><label id="placeholdertext" for="email">Email:</label></div>
 
-            <br />
-            <a onClick={this.onSignIn} className="waves-effect waves-light btn-large text-white  landingBttn"><i className="material-icons supervisor_account left"></i>Submit</a>
-          </div>
+              <div className="input-field" >
+                <input className="validate" id="password" type="password" value={signInPassword}
+                  onChange={this.onTextboxChangeSignInPassword} /><label id="placeholdertext" for="password">Password:</label></div>
+
+              <br />
+              <a onClick={this.onSignIn} className="waves-effect waves-light btn-large text-white  landingBttn"><i className="material-icons supervisor_account left"></i>Submit</a>
+            </div>
           </div>
         )
       }

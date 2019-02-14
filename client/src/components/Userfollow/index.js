@@ -12,30 +12,30 @@ class Userfollow extends React.Component {
   render() {
     return (
       <div className="row">
-      <div className="col s12 m6">
-        <div className="card profileCards darken-1">
-          <div className="card-content white-text">
-            <span className="card-title">People you follow</span>
-            <br></br>
-                <div className="chip">
+        <div className="col s12 m6">
+          <div className="card profileCards darken-1">
+            <div className="card-content white-text">
+              <span className="card-title">People you follow</span>
+              <br></br>
+              <div className="chip">
                 <img className="followpic" src={followpic1} alt="followpic" />
-                  Jane Smith
+                Jane Smith
                 </div>
-                <div className="chip">
+              <div className="chip">
                 <img className="followpic" src={followpic2} alt="followpic" />
-                  John Smith
-                </div> 
-                <div className="chip">
+                John Smith
+                </div>
+              <div className="chip">
                 <img className="followpic" src={followpic3} alt="followpic" />
-                  Debbie Smith
-                </div> 
-                <div className="chip">
+                Debbie Smith
+                </div>
+              <div className="chip">
                 <img className="followpic" src={followpic4} alt="followpic" />
-                  Jason Smith
-                </div>  
+                Jason Smith
+                </div>
+            </div>
           </div>
         </div>
-      </div>
       </div>
     );
   }

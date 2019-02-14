@@ -8,12 +8,12 @@ class Footer extends React.Component {
   render() {
     return (
       <footer className="footer text-center">
-          <div className="footer-copyright">
-            <div className="container">
+        <div className="footer-copyright">
+          <div className="container">
             uFlossy© 2019
             </div>
-          </div>
-        </footer>
+        </div>
+      </footer>
     );
   }
 }
